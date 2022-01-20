@@ -8,6 +8,7 @@ async function getBrott() {
     <h3>${brott.data[i].description}</h3>
     ${brott.data[i].content}
     <img src="${brott.data[i].image}">
+    <p>${brott.data[i].pubdate_iso8601}</p>
     </article>
     `
   }
