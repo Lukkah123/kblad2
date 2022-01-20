@@ -1,6 +1,6 @@
 
 async function getWeather() {
-  let rawData = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Kristianstad&units=metric&appid=d2d6493bb7858fdc92502ea095a3a961')
+  let rawData = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Kristianstad&units=metric&appid=d2d6493bb7858fdc92502ea095a3a961')
   let weather = await rawData.json()
   
     let html = `
