@@ -2,7 +2,8 @@ async function getBrott() {
   let rawData = await fetch('https://brottsplatskartan.se/api/eventsNearby?lat=56.03&lng=14.16')
   let brott = await rawData.json()
   let html = ''
-  for (let i = 0; i < 10; i++){
+  console.log(brott)
+  for (let i = 0; i < 5; i++){
     html += `
     <article>
     <h3>${brott.data[i].description}</h3>
