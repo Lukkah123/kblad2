@@ -4,7 +4,7 @@ async function getCat() {
   
     let html = `
     <article>
-    <h3> Just a random cat </h3>
+    <h3> Just a random cat picture </h3>
     <img src="${cat[0].url}">
     </article>
     `
